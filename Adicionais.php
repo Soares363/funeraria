@@ -1,12 +1,15 @@
 <?php 
 
-class Adicionais {
+class Adicionais{
     private $nome;
     private $valor;
+    private $descricao;
 
-    public function __construct($nome, $valor) {
+
+    public function __construct($nome, $valor,$descricao) {
         $this->nome = $nome;
         $this->valor = $valor;
+        $this->descricao = $descricao;
     }
 
     public function getNome() {
@@ -14,6 +17,12 @@ class Adicionais {
     }
 
     public function getValor() {
+
         return $this->valor;
+    }
+
+    public function getDescricao() {
+
+        return $this->descricao;
     }
 }
