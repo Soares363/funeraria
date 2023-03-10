@@ -1,10 +1,10 @@
 <?php 
 
-include("Animal.php");
-include("Cachorro.php");
-include("Gato.php");
-include("Tartaruga.php");
-include("Cobra.php");
+include("Pessoa.php");
+include("Funcionario.php");
+include("Cliente.php");
+include("Produtos.php");
+include("Servicos.php");
 
 
 $cao = new Cachorro("Totó", "Vira-lata", 3, "Caramelo");
