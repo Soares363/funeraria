@@ -1,4 +1,5 @@
 <?php 
+//---------------------------------------------------------------------------------
 
 include("Pessoa.php");
 include("Funcionario.php");
@@ -6,40 +7,26 @@ include("Cliente.php");
 include("Produtos.php");
 include("Servicos.php");
 
+$ServicoUm = new Servicos("Enterro", 100, "Enterro no cemitério de escolha");
+$ServicoDois = new Servicos("Cremação", 70, "Não deixa vestígios");
+$ServicoTres = new Servicos("Maçarico", 1, "Ineficiente, porém barato");
 
-$cao = new Cachorro("Totó", "Vira-lata", 3, "Caramelo");
-$gato = new Gato("Mingau", "Vira-lata", 2, "Branco");
-$tartaruga = new Tartaruga("Tartaruga", "Jabuti", 100, "Verde");
-$cobra = new Cobra("Leticia", "Python", 5, "Preto");
 
-echo "Nome: " . $cobra->getNome() . " <br>";
-echo "Raça: " . $cobra->getRaca() . " <br>";
-echo "Idade: " . $cobra->getIdade() . " <br>";
-echo "Cor: " . $cobra->getCor() . " <br>";
-$cobra->falar();
-$cobra->andar();
+echo "Nome: " . $ServicoUm->getNome . " <br>";
+echo "Valor: " . $ServicoUm->getValor . " <br>";
+echo "Descrição: " . $ServicoUm->getDescricao . " <br>";
 
 echo "<hr>";
 
-echo "Nome: " . $cao->getNome() . " <br>";
-echo "Raça: " . $cao->getRaca() . " <br>";
-echo "Idade: " . $cao->getIdade() . " <br>";
-echo "Cor: " . $cao->getCor() . " <br>";
-$cao->falar();
-$cao->andar();
+//---------------------------------------------------------------------------------
+
+$produtos = new Produtos("Caixão", 200, "Madeira de Carvalho");
+$produto2 = new Produtos("Coroa de Flores", 100, "Coroa de Rosas");
+$produto3 = new Produtos("Velas", 20, "Velas Brancas");
+$produto4 = new Produtos("Capela", 120, "Capela Jaspe");
+
+echo "Nome: " . $produtos->getNome() . " <br>";
+echo "Valor: " . $produtos->getValor() . " <br>";
+echo "Descrição: " . $produtos->getDescricao() . " <br>";
 
 echo "<hr>";
-
-echo "Nome: " . $gato->getNome() . " <br>";
-echo "Raça: " . $gato->getRaca() . " <br>";
-echo "Idade: " . $gato->getIdade() . " <br>";
-echo "Cor: " . $gato->getCor() . " <br>";
-$gato->falar();
-
-echo "<hr>";
-
-echo "Nome: " . $tartaruga->getNome() . " <br>";
-echo "Raça: " . $tartaruga->getRaca() . " <br>";
-echo "Idade: " . $tartaruga->getIdade() . " <br>";
-echo "Cor: " . $tartaruga->getCor() . " <br>";
-$tartaruga->falar();
