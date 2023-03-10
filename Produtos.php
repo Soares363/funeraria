@@ -1,12 +1,8 @@
 <?php 
 
-class Cachorro extends Animal{
+class Produtos extends Adicionais{
 
-    public function __construct($nome, $raca, $idade, $cor) {
-        parent::__construct($nome, $raca, $idade, $cor);
-    }
-
-    public function falar() {
-        echo "Au au au <br>";
+    public function __construct($nome, $valor,$descricao){
+        parent::__construct($nome, $valor,$descricao);
     }
 }
